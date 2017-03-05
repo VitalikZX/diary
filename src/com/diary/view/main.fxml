@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
+
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="900.0" maxWidth="1250.0" minHeight="900.0" minWidth="1250.0" prefHeight="900.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="900.0" maxWidth="1250.0" minHeight="900.0" minWidth="1250.0" prefHeight="900.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diary.Controller">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -39,7 +39,7 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Помощь">
           <items>
-            <MenuItem mnemonicParsing="false" text="О программе…" />
+            <MenuItem mnemonicParsing="false" onAction="#showAboutIt" text="О программе…" />
           </items>
         </Menu>
       </menus>
