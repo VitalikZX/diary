@@ -4,24 +4,24 @@ package com.diary.model;
  * Created by Vital on 05.03.2017.
  */
 public class Data {
-    private OneDayPrtnFtsCrbhdrtsEnrgy oneDayPrtnFtsCrbhdrtsEnrgy;
+    private OneDayWghtPrtnFtsCrbhdrtsEnrgy oneDayWghtPrtnFtsCrbhdrtsEnrgy;
     private OneDayToDoList oneDayToDoList;
     private BlockOfTwoStrings morningBlock;
     private BlockOfTwoStrings eveningBlock;
 
-    public Data(OneDayPrtnFtsCrbhdrtsEnrgy oneDayPrtnFtsCrbhdrtsEnrgy, OneDayToDoList oneDayToDoList, BlockOfTwoStrings morningBlock, BlockOfTwoStrings eveningBlock) {
-        this.oneDayPrtnFtsCrbhdrtsEnrgy = oneDayPrtnFtsCrbhdrtsEnrgy;
+    public Data(OneDayWghtPrtnFtsCrbhdrtsEnrgy oneDayWghtPrtnFtsCrbhdrtsEnrgy, OneDayToDoList oneDayToDoList, BlockOfTwoStrings morningBlock, BlockOfTwoStrings eveningBlock) {
+        this.oneDayWghtPrtnFtsCrbhdrtsEnrgy = oneDayWghtPrtnFtsCrbhdrtsEnrgy;
         this.oneDayToDoList = oneDayToDoList;
         this.morningBlock = morningBlock;
         this.eveningBlock = eveningBlock;
     }
 
-    public OneDayPrtnFtsCrbhdrtsEnrgy getOneDayPrtnFtsCrbhdrtsEnrgy() {
-        return oneDayPrtnFtsCrbhdrtsEnrgy;
+    public OneDayWghtPrtnFtsCrbhdrtsEnrgy getOneDayWghtPrtnFtsCrbhdrtsEnrgy() {
+        return oneDayWghtPrtnFtsCrbhdrtsEnrgy;
     }
 
-    public void setOneDayPrtnFtsCrbhdrtsEnrgy(OneDayPrtnFtsCrbhdrtsEnrgy oneDayPrtnFtsCrbhdrtsEnrgy) {
-        this.oneDayPrtnFtsCrbhdrtsEnrgy = oneDayPrtnFtsCrbhdrtsEnrgy;
+    public void setOneDayWghtPrtnFtsCrbhdrtsEnrgy(OneDayWghtPrtnFtsCrbhdrtsEnrgy oneDayWghtPrtnFtsCrbhdrtsEnrgy) {
+        this.oneDayWghtPrtnFtsCrbhdrtsEnrgy = oneDayWghtPrtnFtsCrbhdrtsEnrgy;
     }
 
     public OneDayToDoList getOneDayToDoList() {

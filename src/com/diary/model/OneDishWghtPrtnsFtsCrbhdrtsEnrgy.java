@@ -3,17 +3,27 @@ package com.diary.model;
 /**
  * Created by Vital on 05.03.2017.
  */
-public class OneDishPrtnsFtsCrbhdrtsEnrgy {
+public class OneDishWghtPrtnsFtsCrbhdrtsEnrgy {
+    private int weight;
     private double proteins;
     private double fats;
     private double carbohydrates;
     private int energy;
 
-    public OneDishPrtnsFtsCrbhdrtsEnrgy(double proteins, double fats, double carbohydrates, int energy) {
+    public OneDishWghtPrtnsFtsCrbhdrtsEnrgy(int weight, double proteins, double fats, double carbohydrates, int energy) {
+        this.weight = weight;
         this.proteins = proteins;
         this.fats = fats;
         this.carbohydrates = carbohydrates;
         this.energy = energy;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
     public double getProteins() {

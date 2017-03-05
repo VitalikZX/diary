@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="900.0" maxWidth="1200.0" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="900.0" maxWidth="1250.0" minHeight="900.0" minWidth="1250.0" prefHeight="900.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -42,20 +42,60 @@
             <MenuItem mnemonicParsing="false" text="О программе…" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="...Предыдущий день">
-        </Menu>
-        <Menu mnemonicParsing="false" text="Следующий день...">
-        </Menu>
       </menus>
          <VBox.margin>
             <Insets />
          </VBox.margin>
     </MenuBar>
+      <AnchorPane prefHeight="37.0" prefWidth="1200.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" text="&lt;&lt;&lt; Предыдущий день">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Сохранить изменения">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Следующий день &gt;&gt;&gt;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="    Перейти на дату...    ">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="      Статистика дня     ">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Статистика за период">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </AnchorPane>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" VBox.vgrow="ALWAYS">
       <children>
-            <HBox layoutX="104.0" layoutY="47.0" prefHeight="368.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <HBox layoutX="104.0" layoutY="47.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <AnchorPane prefHeight="940.0">
+                  <AnchorPane>
                      <children>
                         <VBox prefHeight="868.0" prefWidth="834.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
@@ -114,7 +154,7 @@
                         <Insets bottom="5.0" left="5.0" right="2.5" top="5.0" />
                      </HBox.margin>
                   </AnchorPane>
-                  <AnchorPane prefHeight="940.0">
+                  <AnchorPane prefHeight="817.0" prefWidth="404.0">
                      <children>
                         <VBox prefHeight="848.0" prefWidth="345.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
@@ -138,7 +178,7 @@
                                  <children>
                                     <VBox layoutX="73.0" layoutY="66.0" prefHeight="390.0" prefWidth="345.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <Label text="Расчёт Белков - Жиров - Углеводов - Энергии:">
+                                          <Label text="Расчёт Массы-Белков-Жиров-Углеводов-Энергии:">
                                              <font>
                                                 <Font name="System Bold" size="15.0" />
                                              </font></Label>
@@ -152,6 +192,7 @@
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="70.0" />
                                                          </children>
@@ -159,6 +200,7 @@
                                                       <HBox prefHeight="25.0" prefWidth="345.0">
                                                          <children>
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
@@ -179,6 +221,7 @@
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="70.0" />
                                                          </children>
@@ -186,6 +229,7 @@
                                                       <HBox prefHeight="25.0" prefWidth="345.0">
                                                          <children>
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
@@ -195,6 +239,7 @@
                                                       <HBox prefHeight="25.0" prefWidth="345.0">
                                                          <children>
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
@@ -215,6 +260,7 @@
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="70.0" />
                                                          </children>
@@ -222,6 +268,7 @@
                                                       <HBox prefHeight="25.0" prefWidth="345.0">
                                                          <children>
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
@@ -242,6 +289,7 @@
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="70.0" />
                                                          </children>
@@ -249,6 +297,7 @@
                                                       <HBox prefHeight="25.0" prefWidth="345.0">
                                                          <children>
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
@@ -258,6 +307,7 @@
                                                       <HBox prefHeight="25.0" prefWidth="345.0">
                                                          <children>
                                                             <ComboBox prefHeight="31.0" prefWidth="135.0" />
+                                                            <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
                                                             <TextField prefHeight="31.0" prefWidth="50.0" />
@@ -278,6 +328,7 @@
                                                       <Font name="System Bold" size="15.0" />
                                                    </font>
                                                 </Label>
+                                                <TextField prefHeight="31.0" prefWidth="50.0" />
                                                 <TextField prefWidth="50.0" />
                                                 <TextField prefHeight="31.0" prefWidth="50.0" />
                                                 <TextField prefHeight="31.0" prefWidth="50.0" />
@@ -288,7 +339,7 @@
                                     </VBox>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane prefHeight="130.0" prefWidth="355.0">
+                              <AnchorPane prefHeight="151.0" prefWidth="345.0">
                                  <children>
                                     <VBox prefHeight="283.0" prefWidth="345.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
